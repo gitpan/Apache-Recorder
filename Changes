@@ -1,0 +1,15 @@
+Revision history for Perl extension HTTP::TestEngine.
+
+0.01  Mon Nov  5 06:56:41 2001
+	- original version; created by h2xs 1.19
+
+0.02  Thu Jan 22 10:08:00 2002
+        - updated documentation
+	- added use Apache::Log
+	- updated directory organization during install
+	- added 4 tests to test.pl to check for required libraries
+	- fixed bug which returned no data if not part of a series of chained handlers
+
+0.03 Wed Feb 27 14:02:00 2002
+        - changed name of HTTP::TestEngine to Apache::Recorder
+        - changed name of HTTP::SessionConfig to HTTP::RecordedSession, and moved into its own package
