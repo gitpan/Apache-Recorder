@@ -23,7 +23,7 @@ This makes the module very useful when creating regression tests.
 
 use strict;
 use vars qw( $VERSION );
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 
 use Apache::Constants qw(:common);
