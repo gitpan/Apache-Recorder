@@ -56,7 +56,12 @@ print qq~
 	</head>
 	<body bgcolor='FFFFFF'>
 	    <p>
-	    Welcome to Apache::Recorder.  This script (and the handler that accompanies it) is a front-end to HTTP::Monkeywrench.  By clicking the button below, you will set a cookie that will allow a handler to track all of your movements on the present domain.  That handler, in turn, will create a map of your "click-through" of the site, including GET and POST parameters.  Upon returning to this script, you will be able to disable that cookie, and then create a simple script that will allow automated testing of the path that you followed.  
+	    Welcome to Apache::Recorder. By clicking the button below, you will 
+	    set a cookie that will allow a handler to track all of your movements on the 
+	    present domain.  That handler, in turn, will create a map of your "click-through" 
+	    of the site, including GET and POST parameters.  Upon returning to this script, 
+	    you will be able to disable that cookie, and then create a simple script that 
+	    will allow automated testing of the path that you followed.  
 	    </p>
 	    <p>
 	    When you are ready to begin, please click on the "Set Cookie" button below.
@@ -79,8 +84,14 @@ sub print_confirmation {
 	    </head>
 	    <body>
 	        The recorder has been configured correctly.  
-		<p>You are now free to visit static pages and scripts that exist on this domain.  (Note: if you leave this domain, you will no longer have a valid cookie -- this will stop Apache::Recorder from recording your path.</p>
-                <p>When you have finished visiting the pages and scripts that you want to record, you will need to write a brief script to automate the testing process.  See <font face='courier'>perldoc HTTP::RecordedSession</font> for a sample program.  You will need to record the following session id for use in this script: <strong>$semi_random</strong>.</p>
+		<p>You are now free to visit static pages and scripts that exist on this domain.  
+		(Note: if you leave this domain, you will no longer have a valid cookie -- 
+		this will stop Apache::Recorder from recording your path.</p>
+                <p>When you have finished visiting the pages and scripts that you want to record, 
+		you will need to write a brief script to automate the testing process.  See 
+		<font face='courier'>perldoc HTTP::RecordedSession</font> for a sample program.  
+		You will need to record the following session id for use in this script: 
+		<strong>$semi_random</strong>.</p>
 
 	    </body>
 	</html>
