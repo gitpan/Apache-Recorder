@@ -13,3 +13,6 @@ Revision history for Perl extension HTTP::TestEngine.
 0.03 Wed Feb 27 14:02:00 2002
         - changed name of HTTP::TestEngine to Apache::Recorder
         - changed name of HTTP::SessionConfig to HTTP::RecordedSession, and moved into its own package
+
+0.04 Mon Mar 01 11:33:00 2002
+        - test.pl still referenced HTTP::TestEngine, which caused installation to die during cpan-testing.

@@ -1,5 +1,8 @@
 Changes
-Makefile.PL
+INSTALL
 MANIFEST
+Makefile.PL
+README
 Recorder.pm
+recorder.pl
 test.pl

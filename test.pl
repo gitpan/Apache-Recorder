@@ -8,7 +8,7 @@ END {print "not ok 1\n" unless $loaded;}
 use strict;
 use vars qw( $loaded $storable $cgi $cookie );
 
-use HTTP::TestEngine;
+use Apache::Recorder;
 $loaded = 1;
 print "ok 1\n";
 
