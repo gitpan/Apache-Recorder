@@ -8,6 +8,16 @@ Apache::Recorder - mod_perl handler to record HTTP sessions
 
 =head1 DESCRIPTION
 
+The Apache::Recorder module is an implementation of a session recorder,
+much like a macro recorder that you might use with a GUI application.
+It allows you to "record" each of the clicks that you make during an
+http session for later playback.  However, Apache::Recorder does not
+provide capabilities to "play-back" a recorded session.  To "play-back"
+a session, you need two additional modules: (1) HTTP::RecordedSession
+to "thaw" the session, and format it appropriately; and (2) A module
+(such as HTTP::Monkeywrench or HTTP::WebTest) which wraps testing
+logic around the "thawed" session.
+
 Apache::Recorder listens for a cookie which indicates that it should record
 the current session.  If the cookie is not present, it immediately declines
 to handle the request.  If the cookie is present, it acquires 
@@ -23,7 +33,7 @@ This makes the module very useful when creating regression tests.
 
 use strict;
 use vars qw( $VERSION );
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 
 use Apache::Constants qw(:common);

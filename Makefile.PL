@@ -5,7 +5,7 @@ WriteMakefile(
     'NAME'	=> 'Apache::Recorder',
     'VERSION_FROM' => 'Recorder.pm', # finds $VERSION
     'PREREQ_PM' => {
-	'CGI::Cookie'       => 0,
+	'CGI::Cookie'       => 1.21, #1.18 has a bug during parse()
 	'Apache::URI'       => 0,
 	'Storable'          => 0,
 	'Apache::Constants' => 0,

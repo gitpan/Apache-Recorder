@@ -1,5 +1,13 @@
 Revision history for Perl extension Apache::Recorder.
 
+0.07 Sun Oct 13, 1:00:00 2002
+        - Changed the PREREQ_PM value for the CGI::Cookie key to 1.21.
+	  CGI::Cookie 1.18 has a bug in the parse method -- unescape
+	  is erroneously attributed to CGI, rather than CGI::Util,
+	  and this was causing one of the tests in t/get_id.t to fail.
+	- Updated the description in Recorder.pm to include a more
+	  generic statement of what Apache::Recorder does.
+
 0.06 Thu Jul 18 16:30:00 2002
         - updated README
 	- update POD for Mock::Apache::Request
